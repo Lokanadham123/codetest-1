@@ -1,1 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UMS - Master page</title>
+<style type="text/css">
+	body
+	{
+		background-color: black;
+	}
+	#container
+	{
+		background-color: black;
+		width: 70%;
+		height: 750px;
+		border:1px solid silver;
+		grid-template-areas: 
+		'h h h h h h '
+		
+	}
+	#head
+	{
+		display: grid;
+		grid-area: h;
+		grid-template-areas: 
+		'grid1 grid1 grid2 grid2 grid2 grid2'
+		'grid1 grid1 grid3 grid3 grid3 grid3'
+		'grid1 grid1 grid4 grid4 grid4 grid4'
+		'grid5 grid5 grid5 grid5 grid5 grid5'
+		'grid6 grid6 grid7 grid7 grid7 grid7'
+	}
+	#r1
+	{
+		grid-area: grid1;
+		background-color: white;
+		height: 140px;
+		background-image: url(logo1.png);
+		background-size: cover;
+	}
+	#l1
+	{
+		grid-area: grid2;
+		background: blue;
+		height: 60px;
+	}
+	#l2
+	{
+		grid-area: grid3;
+		background-color:white;
+		height: 40px;
+	}
+	#l3
+	{
+		grid-area: grid4;
+		background-color: blue;
+		height: 40px;
+	}
+	#left
+	{
+		grid-area: grid6;
+		background-color: white;
+		height: 605px;
+	}
+	#right
+	{
+		grid-area: grid7;
+		background-color: white;
+		height: 600px;
+		border:1px solid silver;
+	}
+	#photo
+	{
+		margin-top: 10px;
+		margin-left: 10px;
+		width:50px; 
+		height: 50px;
+		float: left;
+		padding: 10px 10px 10px 10px;
+		border: 2px solid silver;
+		border-radius: 40px;
+	}
+	#s1
+	{
+		float:left;
+		padding-left: 20px;
+		color: black;
+		padding: 10px;
+		border:none;
+	}
+	#s1:hover
+	{
+		background-color: yellow;
+		transition: 0s linear;
+		
+	}
+	a
+	{
+		text-decoration: none;
+		color: white;
+		float: left;
+		padding-top: 10px;
+	}
+	a:hover
+	{
+		color: green;
+		transition: 1s linear;
+	}
+	small:hover
+	{
+		color: yellow;
+		transition: 0s linear;
+	}
+	#bottom
+	{
+		display: grid;
+		grid-template-areas: 
+		'bm1 bm2'
+		'bm1 bm2'
+	}
+	#bottom1
+	{
+		grid-area: bm1;
+		background-color:white;
+		height: 213px;
 
+	}
+	#bottom2
+	{
+		grid-area: bm2;
+		background-color:pink;
+		height: 213px;
+	}
+	#t
+	{
+		border-collapse: collapse;
+		width: 100%;
+	}
+	#h
+	{
+		padding:5px;
+		padding-left: 70px;
+		text-align: center;
+		background-color:blue;
+		color: white;
+	}
+	#row,#d
+	{
+		padding:5px;
+		padding-left: 70px;
+		text-align: center;
+		background-color: white;
+	}
+	#row,#d:hover
+	{
+		background-color: yellow;
+		transition: 0s linear;
+
+	}
+	#h1
+	{
+		background-color: blue;
+		color: white;
+	}
+	#t1
+	{
+		border-collapse: collapse;
+		width: 90%;
+
+	}
+	#row1,#d1
+	{
+		padding: 10px;
+		text-align: center;
+		background-color: white;
+	}
+	#row1,#d1:hover
+	{
+		background-color: yellow;
+		transition: 0s linear;
+	}
+	
+</style>
+
+</head>
+<body>
+<center><form>
+<div id="container">
+
+<div id="head">
+<div id="r1"></div>
+<div id="l1">
+	<img src="ums.png">
+</div>
+<div id="l2">
+	<pre><span style="color: green;">*************************************</span><span style="color: red; font-family: cursive;">WELCOME</span><span style="color: green;">**************************************</span></pre>
+</div>
+<div id="l3">
+	<a href="Master Page.html" style="padding-right: 20px;padding-left: 20px;">&hearts;Home</a>
+	<a href="time table.html" style="padding-right: 20px;">Time Table</a>
+	<a href="examination.html" style="padding-right: 20px;">Examination</a>
+	<a href="change password.html" style="padding-right: 20px;">Change Password</a>
+	<a href="logout.html" style="padding-right: 30px;">Logout</a>
+</div>
+
+<div style="grid-area: grid5;background-color:#FFD700;height: 5px;"></div>
+<div id="left">
+	<div><img src="image.jpeg" id="photo"></div>
+	<b style="padding-top:10px;font-family: cursive;color: red;">WELCOME</b>
+	<pre style="color: brown; font-family: cooper">CHENGANNAGARI <br>RAVISANKAR<br>(11806888)</pre>
+	<div style="background-color: silver; height: 1px;"></div>
+	<div style="background-color: blue; height: 30px;color: white;border-bottom: 0.2px solid silver;">
+		<small>Roll No - RK18PDA34(Term:118192)</small></div>
+	<div style="background-color: blue; height: 30px;color: white;border-bottom: 0.2px solid silver;">
+		<small>Group - 1 (Section:K18PD)</small></div>
+	<div style="background-color: blue; height: 40px;color: white;border-bottom: 0.2px solid silver;">
+		<small>Program - P132::<br>B.Tech. (Computer Science & Engineering) </small></div>
+	<div style="background-color: blue; height: 30px;color: white;border-bottom: 0.2px solid silver;">
+		<small>Roll No - RK18PDA34(Term:118192)</small></div>
+	<div style="background-color: blue; height: 30px;color: white;border-bottom: 0.2px solid silver;">
+		<small>Seating Plan - 6</small></div>
+	<div style="background-color: blue; height: 30px;color: white;border-bottom: 0.2px solid silver;">
+		<small>Security Information Brochure</small></div>
+	
+
+</div>
+<div id="right">
+	<div style="background-color: violet;height: 30px; color: white;">
+		<b style="float: left;padding-left: 20px;padding-top: 7px;">Attendence</b></div>
+	<div style="background-color: silver;height: 150px;background-attachment: fixed; overflow: scroll;">
+					<div style="background-color: green;height: 35px;color: white;border: 1px solid silver;">
+						<label style="float: left; padding-left: 10px;">INTERNET PROGRAMMING</label><label style="float: right;">100%</label><br>
+						<small style="float: left;padding-left: 10px;">X6:MTE:NOT APPLICABLE;ETE:PRACTICAL COURSE</small></div>
+					<div style="background-color: green;height: 35px;color: white;border: 1px solid silver;">
+						<label style="float: left; padding-left: 10px;">OBJECT ORIENTED PROGRAMMING</label><label style="float: right;">100%</label><br>
+						<small style="float: left;padding-left: 10px;">13: MTE: 100% MCQ – 0% THEORY: ETE: 50% MCQ – 50% THEORY</small></div>
+					<div style="background-color: green;height: 35px;color: white;border: 1px solid silver;">
+						<label style="float: left; padding-left: 10px;">MATHEMATICS</label><label style="float: right;">100%</label><br>
+						<small style="float: left;padding-left: 10px;">11: MTE: 100% MCQ – 0% THEORY: ETE: 100% MCQ – 0% THEORY</small></div>
+					<div style="background-color: green;height: 35px;color: white;border: 1px solid silver;">
+						<label style="float: left; padding-left: 10px;">ENVIRONMENTAL CHEMISTRY</label>
+						<label style="float: right;">100%</label><br>
+						<small style="float: left;padding-left: 10px;">11: MTE: 100% MCQ – 0% THEORY: ETE: 100% MCQ – 0% THEORY</small></div>
+					
+	</div>
+	<div style="background-color: violet; height: 30px; color: white;">
+		<b style="float: left;padding-left: 20px;padding-top: 7px;">Today's Time Table</b></div>
+	<div style="background-color: silver;height: 180px;">
+		
+					<table border="1" id="t">
+						<tr id="row">
+							<th id="h">Time</th>
+							<th id="h">Course</th>
+							<th id="h">Room Number</th>
+							<th id="h">Att.Status</th>
+						</tr>
+						<tr id="row">
+							<td id="d">11-12AM</td>
+							<td id="d">MTH166</td>
+							<td id="d">34-501</td>
+							<td id="d" style="color: green;"><div style="background-color: green;width:10px;height: 10px;float:left;"></div>Marked</td>
+						</tr>
+						<tr id="row">
+							<td id="d">1-2PM</td>
+							<td id="d">CSE326</td>
+							<td id="d">37-902</td>
+							<td id="d"><b>on going</b></td>
+						</tr>
+						<tr id="row">
+							<td id="d">2-3PM</td>
+							<td id="d">CSE326</td>
+							<td id="d">37-902</td>
+							<td id="d" style="color: orange;">Upcoming</td>
+						</tr>
+						<tr id="row">
+							<td id="d">3-4PM</td>
+							<td id="d">PEL131</td>
+							<td id="d">33-612</td>
+							<td id="d" style="color: orange;">Upcoming</td>
+						</tr>
+						<tr id="row">
+							<td id="d">4-5PM</td>
+							<td id="d">MEC107</td>
+							<td id="d">33-612</td>
+							<td id="d" style="color: orange;">Upcoming</td>
+						</tr>
+					</table>
+
+	</div>
+	<div id="bottom">
+	<div id="bottom1"style="border:0.4px solid silver;">
+		<div style="background-color: violet;height: 30px;">
+			<b style="color: white;">Announcements<b></div>
+				<input type="button" value="Academic" style="float: left;width:50%;background-color: silver;">
+				<input type="button" value="Cultural"style="width: 50%;"><br>
+				<small style="color: black;font-style: italic;">
+The students can register themselves <br>
+in the workshop by following <br>
+the below given link<br>
+https://tinyurl.com/dancemoveworkshop<br>
+Date: Saturday, 16th Mar 2019<br>
+Time: 2.30pm-4.30pm<br>
+Venue: Lawns opposite Block-29<br>
+<a href="announcement.html" style="color: blue;padding-left:60px;"><u>View all annoucements</u></a>
+</small>
+	</div>
+	<div id="bottom2" style="border:0.4px solid silver;">
+		<div style="background-color: violet;height: 30px;">
+			<b style="color: white;">Teacher on Leave</b></div>
+
+
+		<div><table id="t1"border="1" style="color:green;font-family: cursive;">
+					<tr id="row1">
+						<th id="h1">Course</th>
+						<th id="h1">Section</th>
+						<th id="h1">Teacher</th>
+						<th id="h1">Dayspan</th>
+					</tr>
+					<tr id="row1" style="font-size: small;">
+						<td id="d1">213</td>
+						<td id="d1">K18PD</td>
+						<td id="d1">Navneet Kaur</td>
+						<td id="d1">Full</td>
+					</tr>
+					<tr id="row1" style="font-size: small;">
+						<td id="d1">107</td>
+						<td id="d1">K18PD</td>
+						<td id="d1">Manish Kumar</td>
+						<td id="d1">Half</td>
+					</tr>
+					<tr id="row1" style="font-size: small;">
+						<td id="d1">131</td>
+						<td id="d1">K18PD</td>
+						<td id="d1">Poonam Sharma</td>
+						<td id="d1">Full</td>
+					</tr>
+				</table></div>
+
+	</div></div>
+</div>
+</div>
+</div>
+</form></center>
+</body>
+</html>
